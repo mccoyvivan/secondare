@@ -1,0 +1,2 @@
+var cookie_string="SignUpReferrer="+document.URL+"; path=/; expires="+getExpirationDate();document.cookie=cookie_string;function getExpirationDate(){var expiration_date=new Date();expiration_date.setTime(expiration_date.getTime()+(30*24*60*60*1000));return expiration_date}
+if(document.cookie.indexOf("landingURL")<0){cookie_string="landingURL="+document.URL+"; path=/; expires="+getExpirationDate()+"; secure";document.cookie=cookie_string}

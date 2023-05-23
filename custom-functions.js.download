@@ -1,0 +1,2 @@
+function gotoLoc(a){var b=(screen.width-640)/2,c=(screen.height-750)/2;myRemote=launch(a,"FreeSurveys","height=640,width=750,channelmode=0,dependent=0,directories=0,fullscreen=0,location=0,menubar=0,resizable=1,scrollbars=1,status=0,toolbar=0,top="+c+",left="+b,"Help"),window.myRemote.focus()}
+function launch(a,b,c,d){return remote=open(a,b,c),null==remote.opener&&(remote.opener=window),remote.opener.name=d,remote}
